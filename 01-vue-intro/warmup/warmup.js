@@ -8,16 +8,17 @@ const App = {
     };
   },
 
-  methods: {
-      // TODO: helper functions
-    butclicked(evt) {
-    this.counter[0] +=1;
+methods: {
+  butclicked(i) {
+    if (i === 0) this.counters[0] += 1;
+    else this.counters[1] += 2;
   },
-  butclicked(evt) {
-    this.counters[1] +=2;
-  },
+},
 
   computed: {
+    total() {
+      return this.counters[0] 
+      + this.counters[1];},
     // TODO: helper functions, but reactive
     //       these are accessed like variables and trigger updates
   },

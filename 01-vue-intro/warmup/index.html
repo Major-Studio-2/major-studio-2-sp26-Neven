@@ -42,12 +42,12 @@
   <body>
     <div id="app">
       <!-- TODO: Add buttons and counters -->
-      <button @click="buttonclicked">1</button>
-      <button @click="buttonclicked">2</button>
+      <button @click="butclicked(0)">1</button>
+      <button @click="butclicked(1)">2</button>
         <div class="conatiner">
-              <div id="counter-1">({counters[0]})</div>
-              <div id="counter-2">({counters[0]})</div>
-              <div id="counter-total">0</div>
+              <div id="counter-1">{{counters[0]}}</div>
+              <div id="counter-2">{{counters[1]}}</div>
+              <div id="counter-total">{{total}}</div>
             </div>
 
 
