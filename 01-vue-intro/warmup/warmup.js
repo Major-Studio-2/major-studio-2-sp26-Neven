@@ -4,11 +4,17 @@ const App = {
   data() {
     return {
       // TODO: declare reactive variables
+      counters: [0, 0],
     };
   },
 
   methods: {
-    // TODO: helper functions
+      // TODO: helper functions
+    butclicked(evt) {
+    this.counter[0] +=1;
+  },
+  butclicked(evt) {
+    this.counters[1] +=2;
   },
 
   computed: {
